@@ -1,0 +1,68 @@
+@mixin center($dir, $jus, $ali) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $ali;
+}
+
+body {
+  background-color: black;
+}
+
+.Profolio {
+  height: 100vh;
+  min-width: 250px;
+  max-width: 450px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+  .top {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    z-index: 1;
+    @include center(column, center, center);
+    img {
+      width: 130px;
+      border-radius: 50%;
+    }
+    img,
+    h1,
+    h3,
+    span {
+      margin-bottom: 15px;
+    }
+    h1 {
+      color: wheat;
+    }
+    a {
+      width: 60%;
+      padding: 10px;
+      border-radius: 24px;
+      border: none;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .bottom {
+    position: absolute;
+    top: 35%;
+    height: 65%;
+    width: 100%;
+    background-color: white;
+    @include center(row, center, center);
+    div {
+      margin-top: 50%;
+      height: 40%;
+      @include center(row, center, center);
+      flex-wrap: wrap;
+      gap: 10%;
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
