@@ -7,19 +7,22 @@
 
 
 .Profolio {
+  max-height: 770px;
   height: 100vh;
   min-width: 250px;
   max-width: 450px;
   text-align: center;
   margin: 0 auto;
   position: relative;
--webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5); 
-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+      @media only screen and (max-height: 770px) {
+      }
   .bg-black {
-  height: 50%;
-  width: 100%;
-  background-color: black;
-  z-index: 2;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
 }
   .top {
     height: 40%;
@@ -39,7 +42,7 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
       margin-bottom: 15px;
     }
     h1 {
-      color: wheat;
+      color: white;
     }
     a {
       width: 60%;
@@ -53,16 +56,15 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
   }
   .bottom {
     position: absolute;
-    top: 35%;
+    top: 32%;
     height: 65%;
     width: 100%;
     
-    background-color: rgb(255, 237, 237);
+    background-color: white;
           @include display(row, center, center);
     div {
       margin-top: 30%;
       height: 40%;
-
       @include display(row, center, '');
       flex-wrap: wrap;
       gap: 20%;
