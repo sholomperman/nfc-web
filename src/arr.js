@@ -5,7 +5,10 @@ import facebook from "./assets/facebook.svg";
 import snapchat from "./assets/snapchat.svg";
 import github from "./assets/github.svg";
 import phone from "./assets/phone.svg";
+import contact from "./assets/Sholom-Perman.vcf";
 import mail from "./assets/mail.svg";
+import resume from "./assets/resume.svg";
+import pdf from "./assets/Sholom-Perman-Resume.pdf";
 import sholomperman from "./assets/profile01.jpg";
 import teny from "./assets/teny.jpeg";
 
@@ -15,7 +18,7 @@ export const arr = [
     name: "Sholom Perman",
     avator: sholomperman,
     bio: "Full Stack Developer",
-    phone: "3473789160",
+    contact: contact,
     hashtags:
       "HTML CSS JavaScript reactJS nodeJS (sass tailwind metirialUI bootstrap)",
     links: [
@@ -59,6 +62,11 @@ export const arr = [
         url: "mailto:sholomperman",
         icon: mail,
       },
+      {
+        id: 8,
+        url: pdf,
+        icon: resume,
+      },
     ],
   },
   {
@@ -66,7 +74,7 @@ export const arr = [
     name: 'Mendel "Tenny" Tenenbaum',
     avator: teny,
     bio: "Aspiring aviation enthusiast and future pilot",
-    phone: "7076990731",
+    contact: "7076990731",
     hashtags:
       "Rabbinic ordination, real estate developer, investor, web developer.",
     links: [

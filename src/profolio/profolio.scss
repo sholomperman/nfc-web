@@ -1,13 +1,10 @@
-@mixin center($dir, $jus, $ali) {
+@mixin display($dir, $jus, $ali) {
   display: flex;
   flex-direction: $dir;
   justify-content: $jus;
   align-items: $ali;
 }
 
-body {
-  background-color: black;
-}
 
 .Profolio {
   height: 100vh;
@@ -16,14 +13,21 @@ body {
   text-align: center;
   margin: 0 auto;
   position: relative;
-
+-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+  .bg-black {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  z-index: 2;
+}
   .top {
     height: 40%;
     width: 100%;
     position: absolute;
     top: 15%;
     z-index: 1;
-    @include center(column, center, center);
+    @include display(column, center, center);
     img {
       width: 130px;
       border-radius: 50%;
@@ -52,14 +56,16 @@ body {
     top: 35%;
     height: 65%;
     width: 100%;
-    background-color: white;
-    @include center(row, center, center);
+    
+    background-color: rgb(255, 237, 237);
+          @include display(row, center, center);
     div {
-      margin-top: 50%;
+      margin-top: 30%;
       height: 40%;
-      @include center(row, center, center);
+
+      @include display(row, center, '');
       flex-wrap: wrap;
-      gap: 10%;
+      gap: 20%;
       img {
         height: 50px;
       }
