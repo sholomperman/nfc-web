@@ -8,7 +8,8 @@ To use this website, you will need an NFC-enabled device, such as a smartphone o
 
 ## Installation
 
-There is no installation required for this website. Simply tap your NFC TAP card to your device, and the website will open automatically.
+to install all the dependencies
+`npm install`
 
 ## Usage
 
