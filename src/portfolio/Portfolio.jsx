@@ -1,22 +1,22 @@
 import React from "react";
-import "./profolio.scss";
+import "./portfolio.scss";
 
-const Profolio = ({ arr }) => {
+const Portfolio = ({ arr }) => {
   return (
-    <div className="Profolio">
+    <div className="Portfolio">
       <div className="bg-black">
         <div className="top">
           <h1>{arr?.name}</h1>
-          <img src={arr?.avator} alt="avator" />
+          <img src={arr?.avatar} alt="avatar" />
           <h3>{arr?.bio}</h3>
           <span>{arr?.hashtags}</span>
           <a href={arr?.contact}>Save Contact</a>
         </div>
         <div className="bottom">
           <div>
-            {arr?.links?.map((i) => (
-              <a key={i.id} target="_blank" rel="noreferrer" href={i.url}>
-                <img src={i.icon} alt="icon" />
+            {arr?.links?.map((item, index) => (
+              <a key={item.id} target="_blank" rel="noreferrer" href={item.url}>
+                <img src={item.icon} alt="icon" />
               </a>
             ))}
           </div>
@@ -26,4 +26,4 @@ const Profolio = ({ arr }) => {
   );
 };
 
-export default Profolio;
+export default Portfolio;

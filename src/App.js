@@ -1,18 +1,27 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Profolio from "./profolio/Profolio";
+import Portfolio from "./portfolio/Portfolio";
 import { arr } from "./arr";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/sholomperman" element={<Profolio arr={arr[0]} />} />
-        <Route path="/tenny" element={<Profolio arr={arr[1]} />} />
-        <Route path="/" element={<Profolio arr={arr[0]} />} />
+        {
+          arr?.map((item, index) => (
+            <Route path={item.route} element={<Portfolio arr={item} />} />
+          ))
+        }
+        <Route path="/" element={<Portfolio arr={arr[0]} />} />
         <Route
           path="*"
-          element={<h1 style={{ color: "white" }}>this page dousn't exist</h1>}
+          element={<h1 style={{
+            height: '100vh',
+            color: "red",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>This page doesn't exist</h1>}
         />
       </Routes>
     </div>
