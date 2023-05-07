@@ -1,15 +1,17 @@
 # Readme - NFC Personal Website
 
-This project is a personal website that displays your social media links, phone number, email, and a bio about you. The unique feature of this website is that it is connected to an NFC TAP card, making it easy to share your information with others.
-
-## Prerequisites
-
-To use this website, you will need an NFC-enabled device, such as a smartphone or tablet. You will also need an NFC TAP card that is programmed with the website's URL.
-
 ## Installation
 
-to install all the dependencies
+To install all the dependencies for this project, run the following command in your terminal:
+
 `npm install`
+
+Ensure that you have at least the minimum required version of Node.js installed on your system to use this project. To check the Node.js version installed on your system, run the following command in your terminal:
+
+`node -v`
+
+This will display the version number of the Node.js installed on your system.
+minimum version 18.13.0
 
 ## Usage
 
