@@ -6,9 +6,13 @@ Check out the live demo [here](https://www.nfctag.ml/sholomperman).
 
 ## Installation
 
-To install all the dependencies for this project, run the following command in your terminal:
+To install this website on your local machine, simply clone this repository and run `npm install` to install the necessary dependencies.
 
-`npm install`
+```bash
+git clone git@github.com:sholomperman/nfc-web.git
+cd nfc-web
+npm install
+```
 
 Ensure that you have at least the minimum required version of Node.js installed on your system to use this project. To check the Node.js version installed on your system, run the following command in your terminal:
 
