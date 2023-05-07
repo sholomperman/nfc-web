@@ -5,70 +5,49 @@
   align-items: $ali;
 }
 
-
-.Portfolio {
-  max-height: 770px;
-  height: 100vh;
-  min-width: 250px;
-  max-width: 450px;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
+#main {
+  max-width: 400px;
+  height: 80vh;
+  min-height: 700px;
+  background-color: white;
+  scroll-behavior: smooth;
+  @include display(column, center, center );
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5); 
   box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
-      @media only screen and (max-height: 770px) {
-      }
-  .bg-black {
-    height: 50%;
-    width: 100%;
-    background-color: black;
-    z-index: 2;
-}
   .top {
-    height: 40%;
+    height: 60%;
     width: 100%;
-    position: absolute;
-    top: 15%;
-    z-index: 1;
+    background: linear-gradient(to top, white 57%, black 60%);
     @include display(column, center, center);
+    gap: 20px;
+      h1 {
+        color: white;
+      }
     img {
       width: 130px;
       border-radius: 50%;
     }
-    img,
-    h1,
-    h3,
     span {
-      margin-bottom: 15px;
-    }
-    h1 {
-      color: white;
+      text-align: center;
     }
     a {
-      width: 60%;
-      padding: 10px;
-      border-radius: 24px;
-      border: none;
       background-color: black;
-      color: white;
+      padding: 18px 48px;
+      border-radius: 18px;
       text-decoration: none;
+      color: white;
     }
   }
   .bottom {
-    position: absolute;
-    top: 32%;
-    height: 65%;
+    height: 40%;
     width: 100%;
-    background-color: white;
-          @include display(row, center, center);
-    div {
-      margin-top: 30%;
-      height: 40%;
-      @include display(row, center, '');
-      flex-wrap: wrap;
-      gap: 20%;
+    padding: 10%;
+    @include display(row, center, center);
+    flex-wrap: wrap;
+    gap:20px;
+    a {
       img {
-        height: 50px;
+        width: 50px;
       }
     }
   }
