@@ -1,5 +1,9 @@
 # Readme - NFC Personal Website
 
+## Live Demo
+
+Check out the live demo [here](https://www.nfctag.ml/sholomperman).
+
 ## Installation
 
 To install all the dependencies for this project, run the following command in your terminal:

@@ -12,6 +12,7 @@ function App() {
             <Route path={item.route} element={<Portfolio arr={item} />} />
           ))
         }
+        {/* This route is only because i want a default route if you have more then one you can only have one default route */}
         <Route path="/" element={<Portfolio arr={arr[0]} />} />
         <Route
           path="*"
