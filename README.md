@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-Check out the live demo [here](https://www.nfctag.ml/sholomperman).
+Check out the live demo [here](https://nfc-web.vercel.app/sholomperman).
 
 ## Installation
 
