@@ -6,9 +6,6 @@ import snapchat from "./icons/snapchat.svg";
 import github from "./icons/github.svg";
 import phone from "./icons/phone.svg";
 import mail from "./icons/mail.svg";
-import resume from "./icons/resume.svg";
-
-import pdf from "./assets/Sholom-Perman-Resume.pdf";
 import contact from "./assets/Sholom-Perman.vcf";
 import sholomperman from "./assets/sholom-profile.jpeg";
 
@@ -62,11 +59,6 @@ export const arr = [
         id: 8,
         url: "mailto:sholomperman",
         icon: mail,
-      },
-      {
-        id: 8,
-        url: pdf,
-        icon: resume,
       },
     ],
   },
