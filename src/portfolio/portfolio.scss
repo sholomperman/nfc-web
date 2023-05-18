@@ -29,6 +29,7 @@
     }
     span {
       text-align: center;
+      padding: 0 5px;
     }
     a {
       background-color: black;
@@ -42,9 +43,9 @@
     height: 40%;
     width: 100%;
     padding: 10%;
-    @include display(row, center, center);
+    @include display(row, space-between, center);
     flex-wrap: wrap;
-    gap:20px;
+    gap: 30px;
     a {
       img {
         width: 50px;
