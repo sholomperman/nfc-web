@@ -30,14 +30,14 @@ export const arr = [
         url: "https://linkedin.com/in/sholom-perman",
         icon: linkedin,
       },
-      {
-        id: 3,
-        url: "https://www.facebook.com/profile.php?id=100072370041022",
-        icon: facebook,
-      },
+      // {
+      //   id: 3,
+      //   url: "https://www.facebook.com/profile.php?id=100072370041022",
+      //   icon: facebook,
+      // },
       {
         id: 4,
-        url: "https://twitter.com/MendelTenenbaum",
+        url: "https://x.com/PermanSholom",
         icon: twitter,
       },
       {
